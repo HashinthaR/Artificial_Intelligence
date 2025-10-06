@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI: Shaping Tomorrow</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="Logo.png" alt="AI Logo" class="logo-image">
+                <span class="logo-text">Artificial Intelligence</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About AI</a></li>
+                <li><a href="#applications" class="nav-link">Applications</a></li>
+                <li><a href="#future" class="nav-link">Future</a></li>
+                <li><a href="#resources" class="nav-link">Resources</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="neural-network">
+                <div class="node"></div>
+                <div class="node"></div>
+                <div class="node"></div>
+                <div class="node"></div>
+                <div class="node"></div>
+                <div class="node"></div>
+            </div>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="title-line">Artificial</span>
+                <span class="title-line">Intelligence</span>
+                <span class="title-accent">Shaping Tomorrow</span>
+            </h1>
+            <p class="hero-subtitle">
+                Discover how AI is transforming our world, from healthcare breakthroughs to creative innovations, 
+                and explore the partnership between human intelligence and machine learning.
+            </p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary" onclick="scrollToSection('about')">Explore AI</button>
+                <button class="btn btn-secondary" onclick="scrollToSection('resources')">View Resources</button>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- About AI Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Understanding AI</h2>
+                <p class="section-subtitle">The Mind of Machines</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="text-block">
+                        <h3>How AI Thinks</h3>
+                        <p>
+                            Artificial Intelligence mimics human cognitive processes through neural networks—interconnected 
+                            systems that learn from data patterns. Just as our brains process information through billions 
+                            of neurons, AI systems use algorithms to recognize patterns, make predictions, and solve complex problems.
+                        </p>
+                    </div>
+                    <div class="text-block">
+                        <h3>Learning & Adaptation</h3>
+                        <p>
+                            AI systems continuously evolve through machine learning. They analyze vast amounts of data, 
+                            identify trends, and improve their performance over time. This adaptive capability allows AI 
+                            to tackle challenges ranging from medical diagnosis to climate modeling with increasing accuracy.
+                        </p>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="ai-brain">
+                        <div class="brain-layer">
+                            <div class="neuron active"></div>
+                            <div class="neuron"></div>
+                            <div class="neuron active"></div>
+                        </div>
+                        <div class="brain-layer">
+                            <div class="neuron"></div>
+                            <div class="neuron active"></div>
+                            <div class="neuron"></div>
+                            <div class="neuron active"></div>
+                        </div>
+                        <div class="brain-layer">
+                            <div class="neuron active"></div>
+                            <div class="neuron"></div>
+                            <div class="neuron active"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Applications Section -->
+    <section id="applications" class="applications">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">AI in Action</h2>
+                <p class="section-subtitle">Transforming Industries & Lives</p>
+            </div>
+            <div class="apps-grid">
+                <div class="app-card" data-category="healthcare">
+                    <div class="app-icon">🏥</div>
+                    <h3>Healthcare Revolution</h3>
+                    <p>AI-powered diagnostics detect diseases earlier, personalize treatment plans, and accelerate drug discovery, saving countless lives worldwide.</p>
+                    <div class="app-stats">
+                        <span class="stat">40% faster diagnosis</span>
+                        <span class="stat">95% accuracy rate</span>
+                    </div>
+                </div>
+                <div class="app-card" data-category="environment">
+                    <div class="app-icon">🌱</div>
+                    <h3>Climate Solutions</h3>
+                    <p>Smart algorithms optimize energy consumption, predict weather patterns, and develop sustainable solutions to combat climate change.</p>
+                    <div class="app-stats">
+                        <span class="stat">30% energy savings</span>
+                        <span class="stat">Real-time monitoring</span>
+                    </div>
+                </div>
+                <div class="app-card" data-category="education">
+                    <div class="app-icon">🎓</div>
+                    <h3>Personalized Learning</h3>
+                    <p>Adaptive learning platforms customize education for each student, identifying strengths and addressing challenges in real-time.</p>
+                    <div class="app-stats">
+                        <span class="stat">Individualized paths</span>
+                        <span class="stat">Instant feedback</span>
+                    </div>
+                </div>
+                <div class="app-card" data-category="creativity">
+                    <div class="app-icon">🎨</div>
+                    <h3>Creative Partnership</h3>
+                    <p>AI collaborates with artists, designers, and musicians, expanding creative possibilities while preserving human imagination and emotion.</p>
+                    <div class="app-stats">
+                        <span class="stat">Unlimited inspiration</span>
+                        <span class="stat">Human-AI fusion</span>
+                    </div>
+                </div>
+                <div class="app-card" data-category="accessibility">
+                    <div class="app-icon">♿</div>
+                    <h3>Inclusive Technology</h3>
+                    <p>AI breaks down barriers, providing assistive technologies that enable people with disabilities to access information and opportunities.</p>
+                    <div class="app-stats">
+                        <span class="stat">Universal access</span>
+                        <span class="stat">Empowering lives</span>
+                    </div>
+                </div>
+                <div class="app-card" data-category="robotics">
+                    <div class="app-icon">🤖</div>
+                    <h3>Intelligent Robotics</h3>
+                    <p>Advanced robots work alongside humans in manufacturing, healthcare, and exploration, combining precision with adaptability.</p>
+                    <div class="app-stats">
+                        <span class="stat">Enhanced precision</span>
+                        <span class="stat">Human collaboration</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Future Section -->
+    <section id="future" class="future">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">The Road Ahead</h2>
+                <p class="section-subtitle">Ethics, Challenges & Opportunities</p>
+            </div>
+            <div class="future-content">
+                <div class="future-timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3>Ethical AI Development</h3>
+                            <p>Building AI systems that are fair, transparent, and accountable. Ensuring AI benefits everyone while respecting privacy and human rights.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3>Human-AI Collaboration</h3>
+                            <p>Creating seamless partnerships where AI amplifies human capabilities rather than replacing them, leading to unprecedented innovation.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3>Global Problem Solving</h3>
+                            <p>Leveraging AI to tackle humanity's greatest challenges: climate change, poverty, disease, and inequality on a global scale.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3>Conscious AI</h3>
+                            <p>Exploring the frontier of artificial consciousness and the profound implications of machines that might one day possess awareness.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="future-challenges">
+                    <h3>Key Challenges</h3>
+                    <div class="challenge-list">
+                        <div class="challenge-item">
+                            <span class="challenge-icon">⚖️</span>
+                            <div>
+                                <h4>Bias & Fairness</h4>
+                                <p>Ensuring AI systems don't perpetuate or amplify human biases</p>
+                            </div>
+                        </div>
+                        <div class="challenge-item">
+                            <span class="challenge-icon">🔒</span>
+                            <div>
+                                <h4>Privacy & Security</h4>
+                                <p>Protecting personal data while enabling AI innovation</p>
+                            </div>
+                        </div>
+                        <div class="challenge-item">
+                            <span class="challenge-icon">🎯</span>
+                            <div>
+                                <h4>Job Displacement</h4>
+                                <p>Managing workforce transitions as AI automates tasks</p>
+                            </div>
+                        </div>
+                        <div class="challenge-item">
+                            <span class="challenge-icon">🌐</span>
+                            <div>
+                                <h4>Global Access</h4>
+                                <p>Ensuring AI benefits reach all communities worldwide</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resources Section -->
+    <section id="resources" class="resources">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Resources & Links</h2>
+                <p class="section-subtitle">Connect & Explore More</p>
+            </div>
+            <div class="resources-content">
+                <div class="resources-grid">
+                    <div class="resource-card">
+                        <div class="resource-icon">📚</div>
+                        <h3>GitHub Repository</h3>
+                        <p>Explore my open-source projects and contributions to the AI development community.</p>
+                        <a href="https://github.com/HashinthaR" target="_blank" rel="noopener noreferrer" class="resource-link">
+                            <button class="btn btn-primary">View GitHub</button>
+                        </a>
+                    </div>
+                    <div class="resource-card">
+                        <div class="resource-icon">🐦</div>
+                        <h3>Twitter/X Updates</h3>
+                        <p>Follow for the latest AI news, insights, and technology updates from the field.</p>
+                        <a href="https://x.com/MihimathaT" target="_blank" rel="noopener noreferrer" class="resource-link">
+                            <button class="btn btn-primary">Follow on X</button>
+                        </a>
+                    </div>
+                    <div class="resource-card">
+                        <div class="resource-icon">📝</div>
+                        <h3>Blog & Articles</h3>
+                        <p>Read in-depth articles about technology, nature, and educational content.</p>
+                        <a href="https://hashintharanasinha.blogspot.com/" target="_blank" rel="noopener noreferrer" class="resource-link">
+                            <button class="btn btn-primary">Visit Blog</button>
+                        </a>
+                    </div>
+                    <div class="resource-card">
+                        <div class="resource-icon">💼</div>
+                        <h3>LinkedIn Profile</h3>
+                        <p>Connect professionally and explore career opportunities in AI and technology.</p>
+                        <a href="https://www.linkedin.com/in/r-w-g-l-hashintha-ranasinghe-162371205/" target="_blank" rel="noopener noreferrer" class="resource-link">
+                            <button class="btn btn-primary">Connect on LinkedIn</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="resources-info">
+                    <h3>About the Creator</h3>
+                    <p>
+                        This website was created by <strong>Hashintha Ranasinghe</strong>, a passionate developer and AI enthusiast 
+                        dedicated to exploring the intersection of technology and human potential. With experience in web development, 
+                        AI research, and educational content creation, I aim to make complex AI concepts accessible to everyone.
+                    </p>
+                    <div class="creator-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">2+</span>
+                            <span class="stat-label">GitHub Repositories</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">36+</span>
+                            <span class="stat-label">Educational Articles</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">∞</span>
+                            <span class="stat-label">Learning Journey</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Join the Conversation</h2>
+                <p class="section-subtitle">Let's Shape Tomorrow Together</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Get Involved</h3>
+                    <p>
+                        The future of AI is being written today. Whether you're a developer, researcher, 
+                        educator, or simply curious about technology's impact, your voice matters in 
+                        shaping how AI evolves.
+                    </p>
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <span class="method-icon">💡</span>
+                            <div>
+                                <h4>Share Ideas</h4>
+                                <p>Contribute to ethical AI development</p>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <span class="method-icon">🤝</span>
+                            <div>
+                                <h4>Collaborate</h4>
+                                <p>Join global AI initiatives</p>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <span class="method-icon">📚</span>
+                            <div>
+                                <h4>Learn More</h4>
+                                <p>Access educational resources</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <select id="interest" name="interest" required>
+                                <option value="">Select Your Interest</option>
+                                <option value="development">AI Development</option>
+                                <option value="ethics">AI Ethics</option>
+                                <option value="education">AI Education</option>
+                                <option value="research">AI Research</option>
+                                <option value="general">General Inquiry</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="Logo.png" alt="AI Logo" class="footer-logo-image">
+                    <span class="logo-text">Artificial Intelligence</span>
+                    <p>Shaping Tomorrow Through Intelligence</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Explore</h4>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About AI</a></li>
+                            <li><a href="#applications">Applications</a></li>
+                            <li><a href="#future">Future</a></li>
+                            <li><a href="#resources">Resources</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Resources</h4>
+                        <ul>
+                            <li><a href="#">AI Ethics</a></li>
+                            <li><a href="#">Research Papers</a></li>
+                            <li><a href="#">Educational Materials</a></li>
+                            <li><a href="#">Community</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Connect</h4>
+                        <ul>
+                            <li><a href="https://x.com/MihimathaT" target="_blank" rel="noopener noreferrer">Twitter/X</a></li>
+                            <li><a href="https://www.linkedin.com/in/r-w-g-l-hashintha-ranasinghe-162371205/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                            <li><a href="https://github.com/HashinthaR" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                            <li><a href="https://hashintharanasinha.blogspot.com/" target="_blank" rel="noopener noreferrer">Blog</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 AI: Shaping Tomorrow. Built with human creativity and machine inspiration.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
